@@ -1,0 +1,21 @@
+[package]
+name = "sha1-macros"
+version = "1.0.0"
+authors = ["Xoddiel d'Croy <xoddiel.dcroy@gmail.com>"]
+description = "Macros for computing SHA1 hashes at compile-time"
+readme = "README.md"
+license = "GPL-3.0-only"
+repository = "https://github.com/xoddiel/sha1-macros"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+base64 = "0.22.0"
+hex = "0.4.3"
+sha1 = "0.10.6"
+syn = "2.0.58"
+
+[dev-dependencies]
+hex-literal = "0.4.1"
